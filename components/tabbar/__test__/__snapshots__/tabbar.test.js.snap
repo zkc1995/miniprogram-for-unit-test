@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for tabbar click 1`] = `
+"当前点击第1个tab项，对应内容为
+    second
+  "
+`;
+
+exports[`test for tabbar click 2`] = `
+"当前点击第2个tab项，对应内容为
+    third
+  "
+`;
+
+exports[`test for tabbar click 3`] = `
+"当前点击第0个tab项，对应内容为
+    first
+  "
+`;

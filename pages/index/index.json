@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "demo": "/components/demo"
+    "tabbar": "/components/tabbar"
   }
 }
