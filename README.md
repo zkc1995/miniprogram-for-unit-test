@@ -58,3 +58,34 @@
     comp.detach()
   })
 ```
+
+### 添加触发事件
+作用：用于校验组件中的一些事件，通过dispatchEvent去调度组件某个元素中的操作
+如：tap、touchstart、touchend等等事件
+```js
+  test('i do tap', async () => {
+    ...(代码省略)
+    const tabbarItems = tabbar.querySelectorAll('.tabbar-item')
+    // 触发事件点击
+    tabbarItems[1].dispatchEvent('tap')
+    // 校验点击的行为结果
+    await simulate.sleep(0)
+    expect(tabbar.data.currentKey).toBe(1)
+  })
+
+```
+
+### 生命周期触发校验
+如某组件的ready周期：xxx.triggerLifeTime('ready')
+```js
+  test('comp lifetime', () => {
+    ...(代码省略)
+    comp.triggerLifeTime('ready') // 触发组件的 ready 生命周期
+    // 校验预想的结果
+    ...
+  })
+```
+
+...还有等等其他语法前往官网查看
+
+[miniprogram-simulate]（https://github.com/wechat-miniprogram/miniprogram-simulate/blob/master/docs/tutorial.md）
