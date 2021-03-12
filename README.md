@@ -88,4 +88,5 @@
 
 ...还有等等其他语法前往官网查看
 
-[miniprogram-simulate]（https://github.com/wechat-miniprogram/miniprogram-simulate/blob/master/docs/tutorial.md）
+### 参考连接
+* https://github.com/wechat-miniprogram/miniprogram-simulate/blob/master/docs/tutorial.md
